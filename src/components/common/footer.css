@@ -1,0 +1,13 @@
+:root {
+  --darkblue: #424C7F;
+  --lightblue: #93c7ff;
+}
+
+div a {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+
+.text-muted {
+  font-size: 14px;
+}
