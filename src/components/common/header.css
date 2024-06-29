@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-:root {
-    --darkblue: #424C7F;
-    --lightblue: #93c7ff;
-}
+@import "../../App.css";
 
 .navbar {
     background-color: var(--darkblue);

@@ -1,7 +1,4 @@
-:root {
-  --darkblue: #424C7F;
-  --lightblue: #93c7ff;
-}
+@import "../../App.css";
 
 div a {
   color: var(--darkblue);

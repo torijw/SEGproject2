@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+  --darkblue: #424C7F;
+  --lightblue: #93c7ff;
+  --darker: #273162;
+  --gray: #F1F0F5;
+}
+
+button.light {
+  color: var(--darkblue);
+  background-color: white;
+  border-color: white;
+}
+
+button.light:hover {
+  color: var(--darkblue);
+  background-color: var(--lightblue);
+  border-color: var(--lightblue);
+}
+
+button.dark {
+  color: white;
+  background-color: var(--darkblue);
+  border-color: var(--darkblue);
+}
+
+button.dark:hover {
+  color: white;
+  background-color: var(--darker);
+  border-color: var(--darker);
+}

@@ -6,8 +6,8 @@ import './header.css';
 
 function Header() {
   return (
-    <header>
-      <Navbar expand="lg" sticky="top" variant="dark">
+    <header className="sticky-top">
+      <Navbar expand="lg" variant="dark">
         <Container fluid>
           <Navbar.Brand className="mx-3" href="/">
             <img
