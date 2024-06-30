@@ -15,12 +15,21 @@ function Banner() {
           <p className="mb-5">
             Discover art that's just right for you, customized to your needs
           </p>
-          <button
-            onClick={() => navigate(path)}
-            className="btn light fw-bold mt-4 shadow"
-          >
-            Explore Artworks
-          </button>
+          <div className="d-flex flex-row">
+            <div className="p-2 right">
+              <a href="#about" className="btn light fw-bold mt-4 shadow">
+                About Us
+              </a>
+            </div>
+            <div className="p-2 left">
+              <button
+                onClick={() => navigate(path)}
+                className="btn light fw-bold mt-4 shadow"
+              >
+                Explore Artworks
+              </button>
+            </div>
+          </div>
         </div>
       </Container>
     </section>
@@ -65,25 +74,82 @@ function Portfolio() {
   );
 }
 
+function Reviews() {
+  return (
+    <section className="my-5">
+      <Container fluid id="reviews" className="my-5">
+        <h3 className="my-3">Recent Reviews</h3>
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="col-sm">
+            <div className="card h-100 shadow-sm">
+              <div className="card-body">
+                <h5 className="card-title">Abstract Acrylic Painting</h5>
+                <h6 class="card-subtitle mb-4 text-muted">Michael Moore</h6>
+                <p className="card-text">
+                  We decided to spruce up our living room with a custom abstract
+                  painting and couldn't be more thrilled with the outcome. It
+                  arrived quickly and was carefully packaged. The colors and
+                  shapes are exactly what we wanted.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm">
+            <div className="card h-100 shadow-sm">
+              <div className="card-body">
+                <h5 className="card-title">Custom Character Figure</h5>
+                <h6 class="card-subtitle mb-4 text-muted">Anonymous</h6>
+                <p className="card-text">
+                  We wanted to jazz up our gaming setup, so we ordered a custom
+                  3D character model online. The artist nailed it with every
+                  detail—facial features, clothing, accessories—all spot-on. The
+                  model looks and feels amazing, now proudly displayed on our
+                  desk. It's a real eye-catcher, and friends keep asking where
+                  to get their own.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm">
+            <div className="card h-100 shadow-sm">
+              <div className="card-body">
+                <h5 className="card-title">Anime-style Illustration</h5>
+                <h6 class="card-subtitle mb-4 text-muted">Cecil L.</h6>
+                <p className="card-text">
+                  We wanted to bring anime flair into our digital collection, so
+                  we commissioned a custom illustration online. The artist
+                  nailed it, blending our ideas with their style perfectly. The
+                  digital file arrived quickly and exceeded our expectation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 function About() {
   return (
     <section className="my-5">
-      <Container fluid id="about" className="about">
+      <Container fluid id="about">
         <h3>About Us</h3>
         <div className="d-flex flex-row mt-4">
           <div className="p-2 left-image" />
           <div className="p-2 right-section">
             <p>
-              Welcome to Art Elysium, your gateway to personalized artistry. Our
-              platform empowers you to create artworks tailored to your vision.
-              With a diverse community of talented artists, we make the process
-              of bringing your ideas to life seamless and inspiring. Whether
-              you're crafting a unique gift, decorating your space, or exploring
-              your creative potential, Art Elysium offers the canvas and the
-              means to make your artistic dreams a reality. Join us in
-              celebrating creativity and individuality.
+              Welcome to Art Elysium! Our platform empowers you to create
+              artworks tailored to your vision. With a diverse community of
+              talented artists, we make the process of bringing your ideas to
+              life seamless and inspiring. Whether you're crafting a unique
+              gift, decorating your space, or exploring your creative potential,
+              Art Elysium offers the canvas and the means to make your artistic
+              dreams a reality. Join us in celebrating creativity and
+              individuality.
             </p>
-            <br/><br/>
+            <br />
+            <br />
             <Container fluid className="p-0" id="contacts">
               <h5>Contact Information</h5>
               <div className="d-flex flex-row">
@@ -117,11 +183,12 @@ function About() {
 
 function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <Portfolio />
+      <Reviews />
       <About />
-    </div>
+    </>
   );
 }
 

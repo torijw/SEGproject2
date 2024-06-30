@@ -7,8 +7,8 @@ function Footer() {
     <footer>
       <Container className="border-top">
         <div className="d-flex justify-content-center py-4">
-          <a href={ process.env.PUBLIC_URL } className="mx-4">Home</a>
-          <a href={ process.env.PUBLIC_URL + "#about" } className="mx-4">About Us</a>
+          <a href={ process.env.PUBLIC_URL + "/"} className="mx-4">Home</a>
+          <a href={ process.env.PUBLIC_URL + "/#about" } className="mx-4">About Us</a>
           <a href={ process.env.PUBLIC_URL + "/explore" } className="mx-4">Explore</a>
           <a href={ process.env.PUBLIC_URL + "/review" } className="mx-4">Review</a>
         </div>

@@ -8,13 +8,17 @@
   --gray: #F1F0F5;
 }
 
-button.light {
+html {
+  scroll-behavior: smooth !important;
+}
+
+a.light, button.light {
   color: var(--darkblue);
   background-color: white;
   border-color: white;
 }
 
-button.light:hover {
+a.light:hover, button.light:hover {
   color: var(--darkblue);
   background-color: var(--lightblue);
   border-color: var(--lightblue);
