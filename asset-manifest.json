@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ArtElysium/static/css/main.bacc5636.css",
-    "main.js": "/ArtElysium/static/js/main.5105618a.js",
+    "main.js": "/ArtElysium/static/js/main.bd0763e6.js",
     "static/media/home-3.jpg": "/ArtElysium/static/media/home-3.68eec86ae4c7e4660c81.jpg",
     "static/media/background.png": "/ArtElysium/static/media/background.8132b80fa24971453ab3.png",
     "static/media/home-1.jpg": "/ArtElysium/static/media/home-1.b9072d88f9b2895a539c.jpg",
@@ -10,10 +10,10 @@
     "static/media/about.webp": "/ArtElysium/static/media/about.dc6c528ab4b2c335b274.webp",
     "index.html": "/ArtElysium/index.html",
     "main.bacc5636.css.map": "/ArtElysium/static/css/main.bacc5636.css.map",
-    "main.5105618a.js.map": "/ArtElysium/static/js/main.5105618a.js.map"
+    "main.bd0763e6.js.map": "/ArtElysium/static/js/main.bd0763e6.js.map"
   },
   "entrypoints": [
     "static/css/main.bacc5636.css",
-    "static/js/main.5105618a.js"
+    "static/js/main.bd0763e6.js"
   ]
 }
