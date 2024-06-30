@@ -68,7 +68,7 @@ function Portfolio() {
 function About() {
   return (
     <section className="my-5">
-      <Container fluid id="about">
+      <Container fluid id="about" className="about">
         <h3>About Us</h3>
         <div className="d-flex flex-row mt-4">
           <div className="p-2 left-image" />
