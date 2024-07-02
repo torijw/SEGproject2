@@ -53,4 +53,76 @@ export const productList = [
     description: "add product description here",
     features: []
   },
+  {
+    id: 5,
+    title: "test2",
+    artist: "artist2",
+    cover: "/images/background.png",
+    price: 150,
+    medium: "digital",
+    style: "anime",
+    format: "digital file",
+    description: "add product description here",
+    features: []
+  },
+  {
+    id: 6,
+    title: "test2",
+    artist: "artist2",
+    cover: "/images/background.png",
+    price: 150,
+    medium: "digital",
+    style: "anime",
+    format: "digital file",
+    description: "add product description here",
+    features: []
+  },
+  {
+    id: 7,
+    title: "test2",
+    artist: "artist2",
+    cover: "/images/background.png",
+    price: 150,
+    medium: "digital",
+    style: "anime",
+    format: "digital file",
+    description: "add product description here",
+    features: []
+  },
+  {
+    id: 8,
+    title: "test2",
+    artist: "artist2",
+    cover: "/images/background.png",
+    price: 150,
+    medium: "digital",
+    style: "anime",
+    format: "digital file",
+    description: "add product description here",
+    features: []
+  },
+  {
+    id: 9,
+    title: "test2",
+    artist: "artist2",
+    cover: "/images/background.png",
+    price: 150,
+    medium: "digital",
+    style: "anime",
+    format: "digital file",
+    description: "add product description here",
+    features: []
+  },
+  {
+    id: 10,
+    title: "test2",
+    artist: "artist2",
+    cover: "/images/background.png",
+    price: 150,
+    medium: "digital",
+    style: "anime",
+    format: "digital file",
+    description: "add product description here",
+    features: []
+  }
 ];

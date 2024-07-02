@@ -6,6 +6,7 @@
   --lightblue: #93c7ff;
   --darker: #273162;
   --gray: #F1F0F5;
+  --blue: #547dee;
 }
 
 html {
@@ -43,4 +44,8 @@ button.dark:hover {
 
 .top-90 {
   height: 90%;
+}
+
+input[type=checkbox]:checked{
+  background-color: var(--darkblue);
 }
