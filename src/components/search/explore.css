@@ -1,0 +1,32 @@
+#explore-title {
+  h2, p {
+    color: var(--darkblue);
+  }
+}
+
+#search-area {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.right#facets {
+  width: 30%;
+  margin: 5px;
+}
+
+.left#results {
+  width: 70%;
+  margin: 5px;
+}
+
+.card-img-top {
+  max-height: 150px;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title {
+  color: var(--darkblue) !important;
+  font-weight: 600;
+}

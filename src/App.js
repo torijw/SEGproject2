@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Explore from './components/Explore';
 import Review from './components/Review';
 import Footer from './components/common/Footer';
+import Product from './components/Product';
+import RequestForm from './components/form/RequestForm';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/explore" element={<Explore/>}/>
+          <Route path="/explore/:id" element={<Product/>}/>
           <Route path="/review" element={<Review/>}/>
+          <Route path="/request" element={<RequestForm/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>

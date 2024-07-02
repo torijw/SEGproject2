@@ -19,11 +19,11 @@ function ReviewForm() {
   const [open, setOpen] = React.useState(false);
  
   const handleClose = () => {
-      setOpen(false);
+    setOpen(false);
   };
 
   const handleOpen = () => {
-      setOpen(true);
+    setOpen(true);
   };
 
   return (

@@ -35,3 +35,12 @@ button.dark:hover {
   background-color: var(--darker);
   border-color: var(--darker);
 }
+
+.title {
+  color: var(--darkblue);
+  padding: 3px;
+}
+
+.top-90 {
+  height: 90%;
+}

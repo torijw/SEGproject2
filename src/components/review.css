@@ -17,10 +17,10 @@
   color: white;
   background-color: var(--darkblue);
   font-size: larger;
-}
 
-h2 {
-  text-shadow: 4px 3px var(--darker);
+  h2 {
+    text-shadow: 4px 3px var(--darker);
+  }
 }
 
 #review-form {

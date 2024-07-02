@@ -40,32 +40,32 @@ function Portfolio() {
   return (
     <section className="mt-5">
       <h3 className="text-center">Examples of Our Works</h3>
-      <Carousel className="mt-4">
+      <Carousel className="mt-4 portfolio" >
         <Carousel.Item interval={5000}>
           <img
             src={require("../images/examples/home-1.jpg")}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
           />
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
             src={require("../images/examples/home-2.jpg")}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
           />
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
             src={require("../images/examples/home-3.jpg")}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
           />
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
             src={require("../images/examples/home-4.webp")}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
           />
         </Carousel.Item>
@@ -84,7 +84,7 @@ function Reviews() {
             <div className="card h-100 shadow-sm">
               <div className="card-body">
                 <h5 className="card-title">Abstract Acrylic Painting</h5>
-                <h6 class="card-subtitle mb-4 text-muted">Michael Moore</h6>
+                <h6 className="card-subtitle mb-4 text-muted">Michael Moore</h6>
                 <p className="card-text">
                   We decided to spruce up our living room with a custom abstract
                   painting and couldn't be more thrilled with the outcome. It
@@ -98,7 +98,7 @@ function Reviews() {
             <div className="card h-100 shadow-sm">
               <div className="card-body">
                 <h5 className="card-title">Custom Character Figure</h5>
-                <h6 class="card-subtitle mb-4 text-muted">Anonymous</h6>
+                <h6 className="card-subtitle mb-4 text-muted">Anonymous</h6>
                 <p className="card-text">
                   We wanted to jazz up our gaming setup, so we ordered a custom
                   3D character model online. The artist nailed it with every
@@ -114,7 +114,7 @@ function Reviews() {
             <div className="card h-100 shadow-sm">
               <div className="card-body">
                 <h5 className="card-title">Anime-style Illustration</h5>
-                <h6 class="card-subtitle mb-4 text-muted">Cecil L.</h6>
+                <h6 className="card-subtitle mb-4 text-muted">Cecil L.</h6>
                 <p className="card-text">
                   We wanted to bring anime flair into our digital collection, so
                   we commissioned a custom illustration online. The artist
@@ -146,7 +146,7 @@ function About() {
               gift, decorating your space, or exploring your creative potential,
               Art Elysium offers the canvas and the means to make your artistic
               dreams a reality. Join us in celebrating creativity and
-              individuality.
+              individuality, each artwork we create is unique!
             </p>
             <br />
             <br />

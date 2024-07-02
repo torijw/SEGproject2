@@ -14,7 +14,7 @@ function Footer() {
         </div>
         <div>
           <h5 className="text-center">Art Elysium</h5>
-          <p className="text-muted text-center">&copy; Tori Wu, 2024</p>
+          <p className="text-muted text-center">&copy; 2024</p>
         </div>
       </Container>
     </footer>
