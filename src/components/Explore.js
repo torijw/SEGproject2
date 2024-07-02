@@ -30,18 +30,6 @@ function FacetedSearch() {
     setSearchField(e.target.value);
   }
 
-  function SearchFacets() {
-    return (
-      <div className="card">
-        <Form>
-          <Form.Group className="mb-3">
-            <Form.Control type="search" placeholder="Search" onChange={search}/>
-          </Form.Group>
-        </Form>
-      </div>
-    );
-  }
-
   function SearchResults({filteredList}) {
     return (
       <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -57,7 +45,14 @@ function FacetedSearch() {
       <Container fluid className="p-0">
         <div className="d-flex flex-row">
           <div className="p-2 right" id="facets">
-            <SearchFacets/>
+          <div className="card">
+            <Form>
+              <Form.Group className="mb-3">
+                <Form.Control type="search" id="searchfield" placeholder="Search" onChange={search}/>
+              </Form.Group>
+              {/* add filter checkboxes/other facets here */}
+            </Form>
+          </div>
           </div>
           <div className="p-2 left" id="results">
             <SearchResults filteredList={filteredList}/>
