@@ -1,0 +1,50 @@
+@import "../../App.css";
+
+#form-area {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+.step {
+  color: var(--darker);
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--gray);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step.completed {
+  color: white;
+  background-color: var(--accent);
+}
+
+.RSPBprogressBar .RSPBprogression{
+  background-color: var(--darkblue);
+}
+
+.step-name {
+  background-color: white;
+}
+
+.request-form {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+}
+
+.form-item {
+  width: 50%;
+  flex-grow: 1;
+  padding: 6px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  text-align: left;
+}

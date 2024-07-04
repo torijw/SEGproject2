@@ -7,6 +7,7 @@
   --darker: #273162;
   --gray: #F1F0F5;
   --blue: #547dee;
+  --accent: #00bd88;
 }
 
 html {
@@ -35,6 +36,15 @@ button.dark:hover {
   color: white;
   background-color: var(--darker);
   border-color: var(--darker);
+}
+
+button.dark:disabled {
+  background-color: var(--gray);
+}
+
+button.dark:active {
+  color: white !important;
+  background-color: #6574bc !important;
 }
 
 .title {
