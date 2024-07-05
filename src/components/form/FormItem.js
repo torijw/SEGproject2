@@ -123,7 +123,7 @@ function FormItem({ item, onChange, answer}) {
           <p className="text-muted">{item.subtitle}</p>
           <Form.Control 
             as="textarea" 
-            rows={4}
+            rows={6}
             onChange={(e) => handleChange(e.target.value, item.value)}
             value={currentValue}
             placeholder={item.placeholder}
@@ -135,7 +135,7 @@ function FormItem({ item, onChange, answer}) {
       return (
         <div className="form-item">
           <Form.Label>{item.label}</Form.Label>
-          <Form.Select aria-label={item.label} onChange={(e) => onChange(e.target.value, item.value)} defaultValue={answer}>
+          <Form.Select aria-label={item.label} onChange={(e) => handleChange(e.target.value, item.value)} defaultValue={answer}>
             {
               item.options.map((opt, index) => {
                 return (
@@ -144,6 +144,19 @@ function FormItem({ item, onChange, answer}) {
               })
             }
           </Form.Select>
+        </div>
+      )
+    case 'file':
+      return (
+        <div className="form-item">
+          <input type="file" onChange={(e) => handleChange(e.target.value, item.value)}></input>
+          <p>Chosen file: {currentValue.split('\\').pop().split('/').pop()}</p>
+        </div>
+      )
+    case 'space':
+      return(
+        <div>
+          <p style={{color: 'white'}}>.</p>
         </div>
       )
     case 'subtitle':

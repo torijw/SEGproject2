@@ -23,6 +23,13 @@ export const questions = [
         value: 'comments',
         placeholder: 'Enter comments',
         required: true
+      },{
+        label: '',
+        type: 'space'
+      },
+      {
+        label: 'Upload file',
+        type: 'file'
       }
     ]
   },
