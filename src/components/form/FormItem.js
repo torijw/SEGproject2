@@ -12,6 +12,38 @@ function FormItem({ item, onChange, answer}) {
 
   switch (item.type) {
     case 'text':
+      if (item.pattern != null) {
+        return (
+          <div className="form-item">
+            <Form.Label>{item.label}</Form.Label>
+            <Form.Control
+              type="text"
+              id={item.label}
+              onChange={(e) => handleChange(e.target.value, item.value)}
+              value={currentValue}
+              placeholder={item.placeholder}
+              pattern={item.pattern}
+              required
+              title={'Example: ' + item.example}
+            />
+          </div>
+        )
+      }
+      if (item.required) {
+        return (
+          <div className="form-item">
+            <Form.Label>{item.label}</Form.Label>
+            <Form.Control
+              type="text"
+              id={item.label}
+              onChange={(e) => handleChange(e.target.value, item.value)}
+              value={currentValue}
+              placeholder={item.placeholder}
+              required
+            />
+          </div>
+        )
+      }
       return (
         <div className="form-item">
           <Form.Label>{item.label}</Form.Label>
@@ -21,6 +53,66 @@ function FormItem({ item, onChange, answer}) {
             onChange={(e) => handleChange(e.target.value, item.value)}
             value={currentValue}
             placeholder={item.placeholder}
+          />
+        </div>
+      )
+    case 'email':
+      return (
+        <div className="form-item">
+          <Form.Label>{item.label}</Form.Label>
+          <Form.Control
+            type="email"
+            id={item.label}
+            onChange={(e) => handleChange(e.target.value, item.value)}
+            value={currentValue}
+            placeholder={item.placeholder}
+            required
+          />
+        </div>
+      )
+    case 'tel':
+      return (
+        <div className="form-item">
+          <Form.Label>{item.label}</Form.Label>
+          <Form.Control
+            type="tel"
+            id={item.label}
+            onChange={(e) => handleChange(e.target.value, item.value)}
+            value={currentValue}
+            placeholder={item.placeholder}
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+            title="Example: 111-222-3333" 
+          />
+        </div>
+      )
+    case 'number':
+      return (
+        <div className="form-item">
+          <Form.Label>{item.label}</Form.Label>
+          <Form.Control
+            type="number"
+            id={item.label}
+            onChange={(e) => handleChange(e.target.value, item.value)}
+            value={currentValue}
+            placeholder={item.placeholder}
+            required
+          />
+        </div>
+      )
+    case 'month-year':
+      return (
+        <div className="form-item">
+          <Form.Label>{item.label}</Form.Label>
+          <Form.Control
+            type="text"
+            id={item.label}
+            onChange={(e) => handleChange(e.target.value, item.value)}
+            value={currentValue}
+            placeholder={item.placeholder}
+            pattern="^(?:0[1-9]|1[0-2])\/(\d{2})$"
+            title="mm/yy"
+            required
           />
         </div>
       )
@@ -35,6 +127,7 @@ function FormItem({ item, onChange, answer}) {
             onChange={(e) => handleChange(e.target.value, item.value)}
             value={currentValue}
             placeholder={item.placeholder}
+            required
           />
         </div>
       )

@@ -22,18 +22,20 @@ function ReviewForm() {
     setOpen(false);
   };
 
-  const handleOpen = () => {
+  const handleOpen = (e) => {
+    e.preventDefault();
     setOpen(true);
   };
 
   return (
     <section id="review-form" className="my-5">
-      <Form>
+      <Form id="review" onSubmit={e => handleOpen(e)}>
         <Form.Group className="mb-3" controlId="commission-type">
           <Form.Label>Commission Requested</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your commission request (does not need to exact)"/>
+            placeholder="Enter your commission request (does not need to exact)"
+            required />
         </Form.Group>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>
@@ -44,16 +46,16 @@ function ReviewForm() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="email">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter your email"/>
+          <Form.Control type="email" placeholder="Enter your email" required/>
         </Form.Group>
         <Form.Group className="mb-3" controlId="review-comments">
           <Form.Label>Comments</Form.Label>
-          <Form.Control as="textarea" rows={4}/>
+          <Form.Control as="textarea" rows={4} required/>
         </Form.Group>
         <div className="text-center">
-          <Button className="btn dark" onClick={handleOpen}>
+          <button className="btn dark" type="submit">
             Submit
-          </Button>
+          </button>
         </div>
       </Form>
 

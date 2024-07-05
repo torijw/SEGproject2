@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FormProgressBar from "./FormProgressBar";
-import { Container, Modal } from "react-bootstrap";
+import { Container, Form, Modal } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import FormPages from "./FormPages";
 
@@ -23,6 +23,7 @@ function RequestForm() {
   const [submitted, setSubmitted] = useState(false);
   const [stepAnswers, setStepAnswers] = useState({1:{index: 1}, 2:{index: 2}, 3:{index:3}});
   const totalSteps = 3;
+  const titles = ["Commission Details", "Personal Information", "Payment Information"];
 
   const prevButton = () => {
     if (index > 1) {
@@ -43,6 +44,11 @@ function RequestForm() {
     setStepAnswers({...stepAnswers, [step]: answersObj});
   }
 
+  const submitFormData = (e) => {
+    e.preventDefault();
+    nextButton();
+  };
+
   return(
     <section>
       <Container fluid className="p-0">
@@ -51,20 +57,27 @@ function RequestForm() {
           <FormProgressBar step={index}/>
         </div>
         <div className="my-5" id="form-area">
-          <div>
-            <FormPages 
-              step={index}
-              onStepUpdate={onStepAnswerUpdate}
-              stepAnswers={stepAnswers}
-            />
-          </div>
-          <div className="d-flex w-50 my-5 mx-auto">
-            <button onClick={prevButton} className="btn dark me-5 right" disabled={index===1}>&lt; Previous</button>
-            <button onClick={nextButton} className="btn dark left">{index == totalSteps ? 'Submit' : 'Next >'}</button>
-          </div>
-          <div className="mx-auto mt-5 text-center" style={{maxWidth: '1000px'}}>
-          <button className="btn" onClick={() => navigate("/explore")}>Cancel</button>
-        </div>
+          <section id="request-form" className="my-5">
+            <h3 className="text-center mb-4">
+              {titles[index-1]}
+            </h3>
+            <Form id="formpage" onSubmit={submitFormData}>
+              <div>
+                <FormPages 
+                  step={index}
+                  onStepUpdate={onStepAnswerUpdate}
+                  stepAnswers={stepAnswers}
+                />
+              </div>
+              <div className="d-flex w-50 my-5 mx-auto">
+                <button type="button" onClick={prevButton} className="btn dark me-5 right" disabled={index===1}>&lt; Previous</button>
+                <button type="submit" className="btn dark left">{index == totalSteps ? 'Submit' : 'Next >'}</button>
+              </div>
+              <div className="mx-auto mt-5 text-center" style={{maxWidth: '1000px'}}>
+                <button className="btn" onClick={() => navigate("/explore")}>Cancel</button>
+              </div>
+            </Form>
+          </section>
         </div>
 
         <Modal show={submitted}>
