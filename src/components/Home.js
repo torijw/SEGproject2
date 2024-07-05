@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 import { Container, Carousel } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Banner() {
   const navigate = useNavigate();
@@ -182,6 +182,19 @@ function About() {
 }
 
 function Home() {
+  const { pathname, hash, key } = useLocation();
+  useEffect(() => {
+    if(hash!== ''){
+      setTimeout(() => {
+        const id=hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname, hash, key]);
+
   return (
     <>
       <Banner />

@@ -7,8 +7,8 @@ function Banner() {
     <section id="background-md">
       <Container fluid className="p-0">
         <div className="text-center" id="box-md">
-          <h2 className="fw-bold">Leave a Review</h2>
-          <p>Let us know how we did!</p>
+          <h2 className="fw-bold">Contact Us or Leave a Review</h2>
+          <p>Have any concerns? We are happy to help</p>
         </div>
       </Container>
     </section>
@@ -31,10 +31,10 @@ function ReviewForm() {
     <section id="review-form" className="my-5">
       <Form id="review" onSubmit={e => handleOpen(e)}>
         <Form.Group className="mb-3" controlId="commission-type">
-          <Form.Label>Commission Requested</Form.Label>
+          <Form.Label>Commission/product</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your commission request (does not need to exact)"
+            placeholder="Enter the product/commission of concern"
             required />
         </Form.Group>
         <Form.Group className="mb-3" controlId="name">

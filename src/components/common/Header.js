@@ -25,7 +25,7 @@ function Header() {
               <Nav.Link className="mx-3" href={ process.env.PUBLIC_URL + "/"}>Home</Nav.Link>
               <Nav.Link className="mx-3" href={ process.env.PUBLIC_URL + "/#about" }>About Us</Nav.Link>
               <Nav.Link className="mx-3" href={ process.env.PUBLIC_URL + "/explore" }>Explore</Nav.Link>
-              <Nav.Link className="mx-3" href={ process.env.PUBLIC_URL + "/review" }>Review</Nav.Link>
+              <Nav.Link className="mx-3" href={ process.env.PUBLIC_URL + "/feedback" }>Feedback</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

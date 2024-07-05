@@ -10,7 +10,7 @@ function Footer() {
           <a href={ process.env.PUBLIC_URL + "/"} className="mx-4">Home</a>
           <a href={ process.env.PUBLIC_URL + "/#about" } className="mx-4">About Us</a>
           <a href={ process.env.PUBLIC_URL + "/explore" } className="mx-4">Explore</a>
-          <a href={ process.env.PUBLIC_URL + "/review" } className="mx-4">Review</a>
+          <a href={ process.env.PUBLIC_URL + "/feedback" } className="mx-4">Feedback</a>
         </div>
         <div>
           <h5 className="text-center">Art Elysium</h5>
