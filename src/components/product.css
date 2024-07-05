@@ -8,3 +8,6 @@
   max-width: 1100px;
 }
 
+#canvas {
+  min-height: 500px;
+}

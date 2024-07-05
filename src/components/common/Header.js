@@ -10,13 +10,14 @@ function Header() {
       <Navbar expand="lg" variant="dark">
         <Container fluid>
           <Navbar.Brand className="mx-3" href={ process.env.PUBLIC_URL + "/"}>
-            <img
+            {/* <img
                 alt=""
                 src="./logo512.png"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
-            />{' '}
+            /> */}
+            {' '}
             Art Elysium
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
