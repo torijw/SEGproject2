@@ -11,3 +11,16 @@
 #canvas {
   min-height: 500px;
 }
+
+.examples .carousel-item img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.examples .carousel-item {
+  text-align: center;
+  height: 600px !important;
+}

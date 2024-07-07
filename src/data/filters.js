@@ -11,9 +11,7 @@ export const styles = [
   "Realism",
   "Illustrative",
   "Abstract",
-  "Modern",
   "Anime/Cartoon",
-  "Pop Art",
   "Other"
 ];
 
